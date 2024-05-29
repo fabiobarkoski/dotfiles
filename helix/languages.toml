@@ -1,0 +1,9 @@
+[[language]]
+name = "python"
+roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git", ".venv"]
+auto-format = true
+formatter = {command = "black", args = ["--quiet", "-"]}
+language-servers = ["pyright"]
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
